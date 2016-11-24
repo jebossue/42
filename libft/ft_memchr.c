@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:49:15 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/09 15:28:18 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 13:53:38 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	tmp_c;
-	size_t		i;
+	unsigned char		tmp_c;
+	size_t				i;
 	const unsigned char	*tmp_s;
 
 	tmp_c = (unsigned char)c;

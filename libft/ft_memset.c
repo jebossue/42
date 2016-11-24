@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:52:11 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/04 11:52:12 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 14:09:29 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char	*tmp;
+	char			*tmp;
 	unsigned int	i;
 
 	tmp = s;

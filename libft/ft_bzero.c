@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:45:15 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/07 18:50:21 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 12:37:43 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*str;
+	char			*str;
 	unsigned int	i;
 
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:51:18 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/17 14:57:36 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 14:09:49 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	char	*tmp_dest;
+	size_t		i;
+	char		*tmp_dest;
 	const char	*tmp_src;
 
 	i = 0;

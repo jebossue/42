@@ -28,6 +28,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c $(INC)
 	gcc -o $@ $(FLAG) -c $< -I $(INC)
 
 clean:
+	rm -rf $(OBJ_NAME)
 	rm -rf $(OBJDIR)
 
 fclean: clean

@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:51:04 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/09 16:03:07 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 14:09:14 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned int	i;
-	const char	*tmp_src;
-	char		*tmp_dest;
+	const char		*tmp_src;
+	char			*tmp_dest;
 
 	i = 0;
 	tmp_src = src;

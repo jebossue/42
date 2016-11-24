@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 13:26:44 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/15 18:04:01 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 14:20:16 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		i++;
 	}
 	str[i] = '\0';
-	return (str);	
+	return (str);
 }

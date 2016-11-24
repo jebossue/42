@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:42:25 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/16 17:44:59 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 14:05:29 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,11 +50,11 @@ char		*ft_itoa(int n)
 	int		i;
 	int		length;
 
-	length = ft_nbrnumeration(n);
-	if ((str = (char*)malloc(sizeof(*str) * (length + 1))) == NULL)
+	length = ft_nbrnumeration(n) + 1;
+	if ((str = (char*)malloc(sizeof(*str) * (length))) == NULL)
 		return (NULL);
 	i = 0;
-	str[length] = '\0';
+	str[length - 1] = '\0';
 	if (n == -2147483648)
 	{
 		i = ft_min(str, i);
@@ -64,12 +64,11 @@ char		*ft_itoa(int n)
 	{
 		n = -n;
 		str[i++] = '-';
-	}	
-	while (length > 0 && i != length)
+	}
+	while (length-- > 0 && i != length)
 	{
 		str[length - 1] = n % 10 + '0';
 		n = n / 10;
-		length--;
 	}
 	return (str);
 }

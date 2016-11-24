@@ -6,12 +6,13 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 14:59:52 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/17 17:20:18 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 14:35:28 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-static int		ft_count(char const *s)
+
+static int	ft_count(char const *s)
 {
 	int	i;
 	int	newlen;
@@ -20,12 +21,14 @@ static int		ft_count(char const *s)
 	i = 0;
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
-	while (s[newlen - 1] == ' ' || s[newlen - 1] == '\n' || s[newlen - 1] == '\t')
+	while (s[newlen - 1] == ' ' || s[newlen - 1] == '\n'
+			|| s[newlen - 1] == '\t')
 		newlen--;
 	newlen = newlen - i + 1;
 	return (newlen);
 }
-char	*ft_strtrim(char const *s)
+
+char		*ft_strtrim(char const *s)
 {
 	char	*str;
 	int		newlen;
@@ -34,7 +37,7 @@ char	*ft_strtrim(char const *s)
 	int		k;
 
 	if ((newlen = ft_count(s)) <= 0)
-		newlen = 1; 
+		newlen = 1;
 	if ((str = (char*)malloc(sizeof(*str) * (newlen))) == NULL)
 		return (NULL);
 	j = 0;

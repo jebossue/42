@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:46:28 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/07 17:48:28 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/22 13:51:29 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 void	*ft_memalloc(size_t size)
 {
-	void	*mem = 0;
+	void	*mem;
 
+	mem = 0;
 	if ((mem = (void *)malloc(sizeof(*mem) * size)) == NULL)
 		return (NULL);
 	ft_bzero(mem, size);
