@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 14:59:52 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/22 14:35:28 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/25 14:24:09 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ char		*ft_strtrim(char const *s)
 	int		j;
 	int		k;
 
+	if (!s)
+		return (NULL);
 	if ((newlen = ft_count(s)) <= 0)
 		newlen = 1;
 	if ((str = (char*)malloc(sizeof(*str) * (newlen))) == NULL)
@@ -45,11 +47,10 @@ char		*ft_strtrim(char const *s)
 	k = 0;
 	while (s[k] == ' ' || s[k] == '\n' || s[k] == '\t')
 		k++;
-	while (i < newlen - 1)
+	while (i++ < newlen - 1)
 	{
 		str[j] = s[k];
 		j++;
-		i++;
 		k++;
 	}
 	str[j] = '\0';

@@ -24,11 +24,10 @@ $(NAME): $(OBJ_NAME)
 	ar -rc $(NAME) $(OBJ_NAME)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c $(INC)
-	@mkdir -p $(OBJDIR)
+	mkdir -p $(OBJDIR)
 	gcc -o $@ $(FLAG) -c $< -I $(INC)
 
 clean:
-	rm -rf $(OBJ_NAME)
 	rm -rf $(OBJDIR)
 
 fclean: clean

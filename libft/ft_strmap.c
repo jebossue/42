@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 12:47:08 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/04 13:14:05 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/11/24 16:26:33 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	int		i;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	if ((str = (char *)malloc(sizeof(*str) * (ft_strlen(s) + 1))) == NULL)
 		return (NULL);
 	i = 0;
